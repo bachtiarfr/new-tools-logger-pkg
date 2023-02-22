@@ -16,7 +16,7 @@ func PublishReport(ctx context.Context, data map[string]interface{}) error {
 	}
 
 	projectID := "bachtiar-development"
-	credentialFilePath := "config/bachtiar-development-73ca13e5c16e.json"
+	credentialFilePath := "bachtiar-development-73ca13e5c16e.json"
 	topicID := "dev-logger-topic"
 
 	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsFile(credentialFilePath))
