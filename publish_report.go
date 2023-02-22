@@ -4,29 +4,21 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"os"
 
 	"cloud.google.com/go/pubsub"
 	"google.golang.org/api/option"
 )
 
-func PublishReport(ctx context.Context, data map[string]interface{}) error {
+func PublishReport(ctx context.Context, data map[string]interface{}, file []byte) error {
 	d, err := json.Marshal(data)
 	if err != nil {
 		fmt.Printf("error marshal :", err)
 	}
 
-	jsonFile, errJsonFile := os.Open("bachtiar-development-73ca13e5c16e.json")
-    if errJsonFile != nil {
-        fmt.Println("error when open json file :", errJsonFile)
-    }
-	
-	byteJsonFile, _ := ioutil.ReadAll(jsonFile)
 	projectID := "bachtiar-development"
 	topicID := "dev-logger-topic"
 
-	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsJSON(byteJsonFile))
+	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsJSON(file))
 	if err != nil {
 		return fmt.Errorf("pubsub: NewClient: %v", err)
 	}
