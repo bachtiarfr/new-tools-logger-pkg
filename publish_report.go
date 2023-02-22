@@ -53,9 +53,6 @@ func PublishReport(ctx context.Context, data map[string]interface{}) error {
 	fmt.Printf("projectID :", projectID)
 	fmt.Printf("topicID :", topicID)
 
-	fmt.Printf("ctx :", ctx)
-	fmt.Printf("data :", data)
-
 	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsFile(credentialFilePath))
 	if err != nil {
 		return fmt.Errorf("pubsub: NewClient: %v", err)
