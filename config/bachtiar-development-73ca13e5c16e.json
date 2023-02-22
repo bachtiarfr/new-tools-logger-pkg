@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bachtiar-development",
+  "private_key_id": "73ca13e5c16e45f4865bf363f3e59b14b9c18216",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQ1dHsb22w2wM5\n489BbbxI2OHzJqhhm7Cl3Hj0HT7BXFpaZTqNU7M+bPJbqhA+0sGX9XuztqGcJ3T/\n7bfdllZCZ9+v+eOdVcSdPVTDLJZRkSfayoOkDZjasl4Zfd/HoHRg9NMl+SwINq3v\nEyZ9+A3fItonifcnUnRIKnmNzTuVw0Ww4O0D92PUFuujpmb/6W9M0ZPqvAgtUtUH\nM+x3xOLiaMlrvXa7HRSS4no95wrKowz985kbNZQh+ADYHAS3jjBPX5wsFHLf9Vdl\nwVC+S8730m1lNhrtEOI196xqvlXVIR6+9CVeJsbCZX+rfjgbM4PFgL3f65xLzLPa\ny7HWg5ZRAgMBAAECggEAV5trfjlcldW6670iw/rqAtFhMGTmPFRY7auo3heqrOk2\nSjevMXyMdEK2BTg5qnE1n67u3vxdnal7zqWF/aJEu4Th9OvqzaUeXyxMc7gvszYm\ntwU/5kGB/zTWfvEsQI2SZN4v+f0muKdfniy1eCDoiNQRGocpNMjFWUTgS1luhqtq\n0pBpvBG+V88jCkNWarYVLNmpfc5zblKzmNnqo4w+SdSQQx0R353V43hLrvTpqW9f\nUpuacp9k0pIvrz51pbsXR1KLqpS6Hoi+++r1BdX0kDkSiv2fQBq8mDZUSfMam5Cn\nkn5Fy/KdZpfdHzGecnVckZQSA+wbLADSyCaEHnpkBQKBgQD7a2cxHwi2AC51toej\n7FxgqXqBUXISJZOsCDHzcDekk+ExvWpO/G/ZbD/cycPE4Abii5txmZ5bWtR1FCvJ\nMOyUQuvDzq9q5Fpj35wi1lq2ntWy3eH8kWjyl5XG+ENAd1MNLJNmHy6ogDzP7osI\nW1fnGsAYmDEqvUslGBflgOB5kwKBgQDUo87INXZ0dGe9i9lgQN1//LHFvNTPtNYT\njlWRBoTuBcyZUD9/to9PAmlzWEp8utLC21mzEtd3e0mgoNxc5Xrywy6pP2YWDzBD\n2QlR6lXEVCFJoGce/ASiaJTc0Bg1jMdhuTVJqwjBKRcLPcRhkwjFtmUscgd1MkkR\nKJOFq35PCwKBgQDE8LS8fZrNNgcunfRSK2uRLDCR68J3BIhQUXsPPe/YMx5LYBxO\nEt9qaKj9we5f4TyDaOgybCrnVJbnvw0tY+1tlZ4om1Y9XPKRGS+s+kvEkVbD7Zp/\nxUd3/9WLLh0/+jhMMYakj/h0dT8tgaXWvfZ1STcADPc2i2C5hc3yMKmlkQKBgFv5\nWoi4rzrh2rle0zBR/jzM1Sv9aGNLCcm9p/8pvbeipIOv9TdNhKEdHvV4PAfFW0JT\nVHIjdTVGC2vCCG7aB5sXl4g3VvW1rh+6sdBPtrdL2HYbPl9ljK+e4ry7+ay37smz\nLXxm0UuTdVc0aUv3KDU0loBp9hXYIUidr2mC6whPAoGAel3F4yQ3L1P3vDyVINuJ\nfn3vaWISGuMm3qYPw8t8GxJNo4LgTi23f3cYrJiJYxPLLVzgxxytZIB+cetAyHzW\nji4XW2ox1qW8ruLM+d+cC4ga2XituPlco5DIg3aUI0GsuU9NBSHNV3zNNxRS3BCA\nJ60oaCDIEYeFr4qguRK10tw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "development-privytools-logger@bachtiar-development.iam.gserviceaccount.com",
+  "client_id": "117421821268743423009",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/development-privytools-logger%40bachtiar-development.iam.gserviceaccount.com"
+}
