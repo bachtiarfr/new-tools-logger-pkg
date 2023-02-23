@@ -9,22 +9,26 @@ import (
 	"google.golang.org/api/option"
 )
 
-func PublishReport(ctx context.Context, data map[string]interface{}, file []byte) error {
+type dataConfig struct {
+	ProjectID string
+	TopicID	  string
+	CredentialFileJson []byte
+}
+
+func PublishReport(ctx context.Context, data map[string]interface{}, conf dataConfig) error {
 	d, err := json.Marshal(data)
 	if err != nil {
 		fmt.Printf("error marshal :", err)
 	}
 
-	projectID := "bachtiar-development"
-	topicID := "dev-logger-topic"
 
-	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsJSON(file))
+	client, err := pubsub.NewClient(ctx, conf.ProjectID, option.WithCredentialsJSON(conf.CredentialFileJson))
 	if err != nil {
 		return fmt.Errorf("pubsub: NewClient: %v", err)
 	}
 	defer client.Close()
 
-	t := client.Topic(topicID)
+	t := client.Topic(conf.TopicID)
 	result := t.Publish(ctx, &pubsub.Message{
 		Data: []byte(d),
 	})
