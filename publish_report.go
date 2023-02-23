@@ -15,20 +15,24 @@ type dataConfig struct {
 	CredentialFileJson []byte
 }
 
-func PublishReport(ctx context.Context, data map[string]interface{}, conf dataConfig) error {
+func PublishReport(ctx context.Context, data map[string]interface{}, conf []byte) error {
 	d, err := json.Marshal(data)
 	if err != nil {
 		fmt.Printf("error marshal :", err)
 	}
 
+	fmt.Printf("configurasi byte :", conf)
 
-	client, err := pubsub.NewClient(ctx, conf.ProjectID, option.WithCredentialsJSON(conf.CredentialFileJson))
+	projectID := "bachtiar-development"
+	topicID := "dev-logger-topic"
+
+	client, err := pubsub.NewClient(ctx, projectID, option.WithCredentialsJSON(conf))
 	if err != nil {
 		return fmt.Errorf("pubsub: NewClient: %v", err)
 	}
 	defer client.Close()
 
-	t := client.Topic(conf.TopicID)
+	t := client.Topic(topicID)
 	result := t.Publish(ctx, &pubsub.Message{
 		Data: []byte(d),
 	})
