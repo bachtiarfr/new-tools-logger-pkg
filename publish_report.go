@@ -21,8 +21,6 @@ func PublishReport(ctx context.Context, data map[string]interface{}, conf []byte
 		fmt.Printf("error marshal :", err)
 	}
 
-	fmt.Printf("configurasi byte :", conf)
-
 	dataConfig := json.RawMessage{}
 
 	json.Unmarshal(conf, dataConfig)
