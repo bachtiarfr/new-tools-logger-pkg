@@ -23,6 +23,12 @@ func PublishReport(ctx context.Context, data map[string]interface{}, conf []byte
 
 	fmt.Printf("configurasi byte :", conf)
 
+	dataConfig := json.RawMessage{}
+
+	json.Unmarshal(conf, dataConfig)
+
+	fmt.Printf("unmarshal :", dataConfig)
+
 	projectID := "bachtiar-development"
 	topicID := "dev-logger-topic"
 
