@@ -25,6 +25,8 @@ func PublishReport(ctx context.Context, data map[string]interface{}, config []by
 		fmt.Printf("error marshal :", err)
 	}
 
+	fmt.Printf("cfg :", cfg)
+
 	client, err := pubsub.NewClient(ctx, cfg.ProjectID, option.WithCredentialsJSON(cfg.CredentialFileJson))
 	if err != nil {
 		return fmt.Errorf("pubsub: NewClient: %v", err)
